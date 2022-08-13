@@ -1,13 +1,13 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-// import './Nav.css'
-// import logo from '../logoblanco.png'
+import './Nav.css'
+import logo from '../logonegro.png'
 import { Link } from 'react-router-dom'
 
 const Nav = () => {
   return (
     
-        <nav className="navbar  navbar-expand-lg bg-white  " style={{minHeight:'1vh',}}>
+        <nav className="navbar  navbar-expand-lg navbar-dark bg-primary" style={{minHeight:'1vh',}}>
             <div className="container-fluid"  >
                 <Link to='/home'>
                         <a className="navbar-brand " >
@@ -15,15 +15,15 @@ const Nav = () => {
                         </a>
                 </Link>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent" >
-                <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li className="nav-item">
+                <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
+                    {/* <li className="nav-item">
                     <NavLink className="nav-link" to='/home' >Home</NavLink>
-                    </li>
+                    </li> */}
                     <li className="nav-item">
                     <NavLink className="nav-link" to='/promesa'> Alex Camacho</NavLink>
                     </li>
                     <li className="nav-item">
-                    <NavLink className="nav-link" to='/filtroinput'> Buscador</NavLink>
+                    <NavLink className="nav-link" to='/filtroinput'> Home</NavLink>
                     </li>
                     <li className="nav-item">
                     <NavLink className="nav-link" to='/filtro/Abstracto'> Abstracto</NavLink>
