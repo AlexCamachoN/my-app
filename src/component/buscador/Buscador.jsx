@@ -42,7 +42,7 @@ const Buscador = () => {
   // const ejemplo =acamachon.map((personaje)=>console.log(personaje.name))
   // console.log(ejemplo)
   return (
-    <div>
+    <div style={{textAlign:"center"}}>
       <h2>Busca tu obra ... </h2>
       <input type="text" placeholder='Busca tu obra preferida' onChange={changeHandler} />
       <div style={{display:'flex', justifyContent:'space-between', alignItems:'center', flexWrap:'wrap'}}>

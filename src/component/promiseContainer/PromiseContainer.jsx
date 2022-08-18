@@ -34,7 +34,7 @@ const PromiseContainer = () => {
     })
 
   return (
-    <div style={{width:'100%', minHeight:'56vh',textAlign:'center'}}>
+    <div style={{margin:'10px', minHeight:'60.5vh', display:'flex', justifyContent:'center',  textAlign:'center',}}>
         <div>
             {/* <p>  <b>Alex Camacho Nuñez</b> </p> */}
             {/* <p >Artista Plástico</p> */}
