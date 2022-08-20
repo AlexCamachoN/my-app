@@ -20,7 +20,7 @@ function App() {
     //se usa BrowserRouter para crear rutas de navegacion 
     ///filtro/:category se define el dato dinamico con :
     <Fragment>
-      <CartProvider>
+      {/* <CartProvider> */}
         <BrowserRouter>
           <Publicidad/>
             <Nav/>
@@ -37,7 +37,7 @@ function App() {
             </Routes>
             <Footer/> 
         </BrowserRouter>
-      </CartProvider>    
+      {/* </CartProvider>  */}
     </Fragment>
   );
 }
