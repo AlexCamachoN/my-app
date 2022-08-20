@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 const Nav = () => {
   return (
     
-        <nav className="navbar  navbar-expand-lg navbar-dark bg-primary" style={{minHeight:'1vh',}}>
+        <nav className="navbar  navbar-expand-lg navbar-dark bg-black" style={{minHeight:'1vh',}}>
             <div className="container-fluid"  >
                 <Link to='/home'>
                         <a className="navbar-brand " >

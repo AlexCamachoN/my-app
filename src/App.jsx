@@ -8,33 +8,37 @@ import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import Nav from './component/nav/Nav';
 import Publicidad from './component/publicidad/Publicidad';
 import DetalleContainer from './detalle/DetalleContainer';
-// import Footer from './component/footer/Footer';
+import Footer from './component/footer/Footer';
 import Error from './component/error/Error';
 import Buscador from './component/buscador/Buscador';
-
+import Cart from './views/Cart';
+import { CartProvider } from './context/CartContext';
+import { Fragment } from 'react';
 
 function App() {
-  const infor='esta es la infor del componente'
-
   return (
     //se usa BrowserRouter para crear rutas de navegacion 
     ///filtro/:category se define el dato dinamico con :
-    
-    <BrowserRouter>
-    <Publicidad/>
-      <Nav/>
-      <Routes>
-        <Route path='/home' element={<Fecht/>} />
-        {/* <Route path='/' element={<Fecht/>} /> */}
-        <Route path='/promesa' element={<PromiseContainer/>}/>
-        <Route path='/filtro/:category' element={<Fecht/>}/> /    
-        <Route path='/detalle/:id' element={<DetalleContainer/>} />
-        <Route path='/filtroinput' element={<Buscador/>}/>
-        <Route path='/error' element={<Error/>} />
-        <Route path='*' element={<Navigate to='/error'/>}/>
-      </Routes>
-      {/* <Footer/> */}
-    </BrowserRouter>
+    <Fragment>
+      <CartProvider>
+        <BrowserRouter>
+          <Publicidad/>
+            <Nav/>
+            <Routes>
+              <Route path='/home' element={<Fecht/>} />
+              {/* <Route path='/' element={<Fecht/>} /> */}
+              <Route path='/promesa' element={<PromiseContainer/>}/>
+              <Route path='/filtro/:category' element={<Fecht/>}/> /    
+              <Route path='/detalle/:id' element={<DetalleContainer/>} />
+              <Route path='/cart' element={<Cart/>}/>
+              <Route path='/filtroinput' element={<Buscador/>}/>
+              <Route path='/error' element={<Error/>} />
+              <Route path='*' element={<Navigate to='/error'/>}/>
+            </Routes>
+            <Footer/> 
+        </BrowserRouter>
+      </CartProvider>    
+    </Fragment>
   );
 }
 

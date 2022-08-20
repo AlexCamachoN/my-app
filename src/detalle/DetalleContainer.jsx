@@ -3,6 +3,8 @@ import React from 'react'
 import { useEffect } from 'react'
 import { useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
+import ItemCounter from '../component/itemCounter/ItemCounter'
+import Detalle from './Detalle'
 
 const DetalleContainer = () => {
     const[detalle, setDetalle] = useState({}) //variable de estado
@@ -18,18 +20,10 @@ const DetalleContainer = () => {
         } )//atrapa el error
         
     },[id])
-    const {image,price, name, description}= detalle
-    console.log(image)
+   
   return (
-    <div style={{margin:'10px', minHeight:'60.5vh', display:'flex', justifyContent:'center',  textAlign:'center',}}>
-      <div>
-        <img src={image} alt="" height='280px'/>
-      </div>
-      <div style={{width:'30%'}}>
-        <p>Titulo: {name}  </p>
-        <p>Preciio: $ {price} </p>
-        <p> <b>Descripción:</b>{description}  </p>       
-      </div>
+    <div>
+      <Detalle detalle={detalle}/>
     </div>
     
     
