@@ -1,12 +1,14 @@
 import React, { useState } from 'react'
 import ItemCounter from '../component/itemCounter/ItemCounter'
 import { useNavigate } from 'react-router-dom'
+import { useCart } from '../context/CartContext'
 
 const Detalle = ({detalle}) => {
   const {id,image,price, name, description, stock}= detalle
   const [counter, setCounter]=useState(1)
   const [purchase, setPurchase]=useState(false)
   const navigate= useNavigate()
+  const {addToCart}=useCart()
   const onAdd=()=>{
     let item={
       name,
@@ -16,7 +18,8 @@ const Detalle = ({detalle}) => {
       quantity: counter
     }
     setPurchase(true)
-    console.log('compraste:', item)
+    // console.log('compraste:', item)
+    addToCart(item)
   }
     
     // console.log(image)
@@ -32,7 +35,7 @@ const Detalle = ({detalle}) => {
         {
           purchase
           ? <div>
-            <button onClick={()=> navigate('/')}>seguir comprando</button>
+            <button onClick={()=> navigate('/filtroinput')}>seguir comprando</button>
             <button onClick={()=> navigate('/cart')}>ir al carrito</button>
           </div>
         

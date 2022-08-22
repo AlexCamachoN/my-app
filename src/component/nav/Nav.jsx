@@ -3,8 +3,14 @@ import { NavLink } from 'react-router-dom'
 import './Nav.css'
 import logo from '../logonegro.png'
 import { Link } from 'react-router-dom'
+import { useCart } from '../../context/CartContext'
+import CartWidget from '../cartWidget/CartWidget'
 
 const Nav = () => {
+
+    //usando el custon hook, en CartContext se hizo useCart para mejor practica
+    const{cart}= useCart()
+    console.log(cart)
   return (
     
         <nav className="navbar  navbar-expand-lg navbar-dark bg-black" style={{minHeight:'1vh',}}>
@@ -34,6 +40,9 @@ const Nav = () => {
                     <li className="nav-item">
                     <NavLink className="nav-link" to='/filtro/Bodegon'> Bodegon</NavLink>
                     </li>
+                    <li className="nav-item">
+                    <NavLink className="nav-link" to='/cart'><CartWidget/></NavLink>
+                    </li>
                     {/* <li className="nav-item dropdown">
                         <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Reconocimientos
@@ -49,7 +58,7 @@ const Nav = () => {
                         <a className="nav-link disabled">Promesa</a>
                     </li> */}
                 </ul>
-                
+                {/* <NavLink className="nav-link" to='/cart'><CartWidget/></NavLink> */}
                 </div>
             </div>
         </nav>

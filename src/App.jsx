@@ -14,13 +14,14 @@ import Buscador from './component/buscador/Buscador';
 import Cart from './views/Cart';
 import { CartProvider } from './context/CartContext';
 import { Fragment } from 'react';
+import Checkout from './views/Checkout';
 
 function App() {
   return (
     //se usa BrowserRouter para crear rutas de navegacion 
     ///filtro/:category se define el dato dinamico con :
     <Fragment>
-      {/* <CartProvider> */}
+      <CartProvider>
         <BrowserRouter>
           <Publicidad/>
             <Nav/>
@@ -31,13 +32,14 @@ function App() {
               <Route path='/filtro/:category' element={<Fecht/>}/> /    
               <Route path='/detalle/:id' element={<DetalleContainer/>} />
               <Route path='/cart' element={<Cart/>}/>
+              <Route path='/checkout' element={<Checkout/>}/>
               <Route path='/filtroinput' element={<Buscador/>}/>
               <Route path='/error' element={<Error/>} />
               <Route path='*' element={<Navigate to='/error'/>}/>
             </Routes>
             <Footer/> 
         </BrowserRouter>
-      {/* </CartProvider>  */}
+      </CartProvider>
     </Fragment>
   );
 }
