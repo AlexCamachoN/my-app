@@ -24,14 +24,14 @@ const Detalle = ({detalle}) => {
     
     // console.log(image)
   return (
-    <div style={{margin:'10px', minHeight:'60.5vh', display:'flex', justifyContent:'center',  textAlign:'center',}}>
+    <div style={{margin:'10px', minHeight:'60.5vh',display:'flex', justifyContent:'center',  textAlign:'center',}}>
       <div>
         <img src={image} alt="" height='280px'/>
       </div>
-      <div style={{width:'30%'}}>
-        <p>Titulo: {name}  </p>
-        <p>Preciio: $ {price} </p>
-        <p> <b>Descripción:</b>{description}  </p> 
+      <div style={{width:'30%',textAlign:'left',margin:'20px' }}>
+        <p><b>Titulo:</b> {name}  </p>
+        <p><b>Precio:</b> $ {price} </p>
+        <p> <b>Descripción: </b>{description}  </p> 
         {
           purchase
           ? <div>

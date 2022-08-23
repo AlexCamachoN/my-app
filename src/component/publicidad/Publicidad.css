@@ -1,1 +1,5 @@
-.fotologo {}
+.publicidad {
+    background-image: linear-gradient(135deg, #52461f, #380f31);
+    background-size: 100%;
+    animation: 10s infinite;
+}

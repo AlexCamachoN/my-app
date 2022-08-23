@@ -1,12 +1,18 @@
 import React from 'react'
-import fotologo from '../logonegro.png'
+import './Publicidad.css'
+import { Link } from 'react-router-dom'
+import fotologo from '../logoblanco.png'
 
 const Publicidad = () => {
   return (
-    <div style={{ background: " #f9faa6  ", minHeight:'8vh'}}>
+    <div className="publicidad" style={{ background: " ", minHeight:'8vh',}}>
       <div style={{marginLeft:"160px"}}>
-        <img src={fotologo} alt="" height='80'/>
-        
+        {/* <img src={fotologo} alt="" height='80'/> */}
+        <Link to='/filtroinput'>
+          <a className="navbar-brand " >
+            <img src={fotologo} height='80'/>
+          </a>
+        </Link>
       </div>
         {/* <h2 style={{color:'white'}}>Felices fiestas patrias</h2> */}
     </div>
