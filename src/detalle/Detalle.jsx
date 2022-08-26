@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import { useCart } from '../context/CartContext'
 
 const Detalle = ({detalle}) => {
-  const {id,image,price, name, description, stock}= detalle
+  const {id,image,price, name, description, stock, codigo}= detalle
   const [counter, setCounter]=useState(1)
   const [purchase, setPurchase]=useState(false)
   const navigate= useNavigate()
@@ -14,6 +14,7 @@ const Detalle = ({detalle}) => {
       name,
       id,
       price,
+      codigo,
       image,
       quantity: counter
     }
@@ -30,6 +31,7 @@ const Detalle = ({detalle}) => {
       </div>
       <div style={{width:'30%',textAlign:'left',margin:'20px' }}>
         <p><b>Titulo:</b> {name}  </p>
+        <p><b>Código</b> {codigo} </p>
         <p><b>Precio:</b> $ {price} </p>
         <p> <b>Descripción: </b>{description}  </p> 
         {
