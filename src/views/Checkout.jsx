@@ -34,7 +34,7 @@ let total= 0;
       </div>   
       <button style={{background:"green"}} >
       <a style={{color:'black', textDecoration:'none', background:"green"}} 
-          target="_blank" rel="noreferrer" href={`http://wa.me/+5194239308/?text=Tu pedido:%0A `
+          target="_blank" rel="noreferrer" href={`http://wa.me/+51942393308/?text=Tu pedido:%0A `
            + producto1 + `%0A $:` + precio1 +`%0A codigo:`+ codigo  +`%0A Total :`+ total} 
           > 
           <FaWhatsapp/>Completar Pedido en WhatsApp</a> 
