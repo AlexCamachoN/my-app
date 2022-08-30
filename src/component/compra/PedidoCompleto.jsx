@@ -6,7 +6,7 @@ const PedidoCompleto = ({pedidocompleto}) => {
         <p>{pedidocompleto.name} </p>
         <p>{pedidocompleto.codigo} </p>
         <p>Unds: {pedidocompleto.quantity} </p>   
-        <p>${pedidocompleto.price} </p>
+        <p>$ {pedidocompleto.price} </p>
             
     </div>  
   )

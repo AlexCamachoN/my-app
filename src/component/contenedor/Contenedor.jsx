@@ -33,7 +33,7 @@ const Contenedor = ({data}) => {
                  los cuales asemejan a halos que mistifican el alma del ser. Su tratamiento 
                  compositivo se caracteriza por el uso de una serie de grafismos que configuran 
                  planos tipográficos que versan una lectura de la vida de nuestra sociedad del momento;
-                  este elemento conjuntamente con los procesos de traslapes y empastes cromáticos configuran 
+                este elemento conjuntamente con los procesos de traslapes y empastes cromáticos configuran 
                   un panorama factural plástico que es vital en el tratamiento de la obra del artista. 
             </p>
                } 
@@ -46,7 +46,7 @@ const Contenedor = ({data}) => {
 
         <div>
             
-            {grado && <div><img src={fotogrado} height='400' /></div> }
+            {grado && <div><img src={fotogrado} height='280' /></div> }
 
             <button onClick={handleSho}> {grado?'Ver menos':'Ver grado bachiller'} </button>
         </div>
