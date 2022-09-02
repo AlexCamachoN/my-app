@@ -3,6 +3,8 @@ import { useState } from 'react'
 import { data } from '../../mocks/mockApi'
 import Contenedor from '../contenedor/Contenedor'
 import perfil from './Fotoperfil.jpg'
+import fotogaleria from './paredgaleria.jpg'
+
 
 const PromiseContainer = () => {
     const [lista, setLista] = useState([])
@@ -34,11 +36,17 @@ const PromiseContainer = () => {
     })
 
   return (
-    <div style={{margin:'10px', minHeight:'60.5vh', display:'flex', justifyContent:'center',  textAlign:'center',}}>
+    <div style={{margin:'10px', minHeight:'60.5vh', display:'', justifyContent:'center',  textAlign:'center',}}>
+        <div>
+            <p>Bienvenido a nuestra galeria virtual de arte A.Camacho.N</p>
+            <img src={fotogaleria} height='230' alt="" />
+        </div>
+        <p></p>
         <div>
             {/* <p>  <b>Alex Camacho Nuñez</b> </p> */}
             {/* <p >Artista Plástico</p> */}
-            <img src={perfil} alt="" height='200' />
+            
+            <img src={perfil} alt="" height='170' />
             {/* <button>ver mas</button> */}
             <Contenedor/>
         </div>

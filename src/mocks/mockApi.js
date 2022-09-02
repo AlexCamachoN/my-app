@@ -2,7 +2,7 @@ const products = [
 
     {
         "id": 1,
-        "title": "Hambre de piel",
+        "title": "Fraternidad",
         "price": 129,
         "image": "img/abrazo.jpg",
         "imgdetail": "img/detalleerotica.jpg",

@@ -16,6 +16,7 @@ const Contenedor = ({data}) => {
       
     return (  
     <div>
+      
         <h3>Alex Camacho Nuñez</h3>
         <p><b>Artista Plástico</b></p>
         {/* <h3>{data} </h3> */}
@@ -38,17 +39,20 @@ const Contenedor = ({data}) => {
             </p>
                } 
 
-            <button onClick={handleShw} style={{background: " #dae66f "}} >{show?'Leer menos' :'Leer sobre su propuesta artistica'}</button>
+            <button onClick={handleShw}  className="btn btn-outline-dark">{show?'Leer menos' :'Leer sobre su propuesta artistica'}</button>
 
             
         </div>
         <th></th>
 
         <div>
+          
             
-            {grado && <div><img src={fotogrado} height='280' /></div> }
+            {grado && <div>
+              
+              <img src={fotogrado} height='280' /></div> }
 
-            <button onClick={handleSho}> {grado?'Ver menos':'Ver grado bachiller'} </button>
+            <button onClick={handleSho} className="btn btn-outline-dark"> {grado?'Ver menos':'Ver grado bachiller'} </button>
         </div>
         
 

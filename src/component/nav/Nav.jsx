@@ -13,7 +13,7 @@ const Nav = () => {
     console.log(cart)
   return (
     
-        <nav className="navbar  navbar-expand-lg navbar-dark bg-black " style={{minHeight:'1vh',}}>
+        <nav className="navbar  navbar-expand-lg navbar-dark bg-black "  style={{minHeight:'1vh', }}>
             <div className="container-fluid "  >
                 <Link to='/home'>
                         <a className="navbar-brand " >
@@ -44,6 +44,7 @@ const Nav = () => {
                         <NavLink className="nav-link" to='/filtro/Bodegon'> Bodegon</NavLink>
                         </li>
                         <li className="nav-item">
+                        <NavLink className="nav-link" to='/filtro/Desnudo'> Desnudo</NavLink> 
                         </li>                      
                     </ul>    
                                
