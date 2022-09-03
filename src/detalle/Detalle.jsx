@@ -26,11 +26,11 @@ const Detalle = ({detalle}) => {
     
     // console.log(image)
   return (
-    <div className='card-detalle'
+    <div 
     style={{margin:'10px', minHeight:'60.5vh', justifyContent:'center',  textAlign:'center',border:'4px'  }}
     >
       <div  >
-        <img src={image} alt="" height='280px'/>
+        <img src={image} alt="" height='270px'/>
         <div style={{ width:'',textAlign:'left',display:'',margin:'20px', justifyContent:'center',lineHeight:'1rem' }}>
           <p style={{lineHeight:'0.1rem'}} ><b>Titulo</b>: "{name}" </p>
           <p style={{lineHeight:'0.1rem'}}><b>Código</b>: {codigo} </p>
