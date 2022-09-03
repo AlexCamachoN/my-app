@@ -27,7 +27,7 @@ const Detalle = ({detalle}) => {
     // console.log(image)
   return (
     <div className='card-detalle'
-    style={{margin:'10px', minHeight:'', justifyContent:'center',  textAlign:'center',border:'4px'  }}
+    style={{margin:'10px', minHeight:'60.5vh', justifyContent:'center',  textAlign:'center',border:'4px'  }}
     >
       <div  >
         <img src={image} alt="" height='280px'/>
