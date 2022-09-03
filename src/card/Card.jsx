@@ -6,7 +6,8 @@ const Card = ({personaje}) => {
   const navegar = useNavigate()
 
   return (
-    <div className="card" style={{width:"16rem", margin:'1rem',background:""}} >
+    //width:"16 rem"
+    <div className="card" style={{width:"18rem", margin:'1rem',background:"", textAlign:'center', justifyContent:'center'}} >
         <img src={personaje.image} className="card-img-top" alt="..." onClick={()=>navegar(`/detalle/${personaje.id}`)}/>
         <div className="card-body">
             <h5 className="card-title">{personaje.name} </h5>
