@@ -15,6 +15,7 @@ import Cart from './views/Cart';
 import { CartProvider } from './context/CartContext';
 import { Fragment } from 'react';
 import Checkout from './views/Checkout';
+import Retrato from './component/retrato/Retrato';
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
               <Route path='/filtroinput' element={<Buscador/>}/>
               <Route path='/error' element={<Error/>} />
               <Route path='*' element={<Navigate to='/error'/>}/>
+              <Route path='/retrato' element={<Retrato/>}/>
             </Routes>
             <Footer/> 
         </BrowserRouter>

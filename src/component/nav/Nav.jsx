@@ -45,7 +45,10 @@ const Nav = () => {
                         </li>
                         <li className="nav-item">
                         <NavLink className="nav-link" to='/filtro/Desnudo'> Desnudo</NavLink> 
-                        </li>                      
+                        </li>    
+                        <li className="nav-item">
+                        <NavLink className="nav-link" to='/retrato'> Retrato</NavLink> 
+                        </li>                   
                     </ul>    
                                
                 </div>

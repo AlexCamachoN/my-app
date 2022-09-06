@@ -18,7 +18,6 @@ const PromiseContainer = () => {
     //     .catch((error) => console.log(error))
     //     .finally(()=> setLoanding(false))
     // },[])
-
     //tratando promesa con async await try catch finally
     const getData = async ()=>{
         try{
