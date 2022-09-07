@@ -40,7 +40,7 @@ const PromiseContainer = () => {
 
   return (
     <div style={{margin:'10px', minHeight:'60.5vh', display:'', justifyContent:'center',  textAlign:'center', }}>
-        <div style={{ backgroundColor:'#1c1108',  }}>
+        <div style={{backgroundImage: "url(/img/fondogaleria.png)",}}>
             <p style={{padding:'10px', color:'white'}}>Bienvenido a nuestra galeria virtual de arte A.Camacho.N</p>
             <img src={fotogaleria} height='230' alt="" />
             <div>
