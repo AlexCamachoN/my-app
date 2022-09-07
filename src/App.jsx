@@ -21,7 +21,7 @@ function App() {
   return (
     //se usa BrowserRouter para crear rutas de navegacion 
     ///filtro/:category se define el dato dinamico con :
-    <Fragment>
+    <Fragment >
       <CartProvider>
         <BrowserRouter>
           <Publicidad/>

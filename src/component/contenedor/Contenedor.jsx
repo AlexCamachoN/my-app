@@ -20,7 +20,7 @@ const Contenedor = ({data}) => {
         <h3>Alex Camacho Nuñez</h3>
         <p><b>Artista Plástico</b></p>
         {/* <h3>{data} </h3> */}
-        <div>
+        <div style={{textAlign:'justify', margin:'10px' }}>
             <p>Nace en <strong> Chulucanas</strong>, Piura, Perú en 1989, 
             donde aún reside. Despierta un gran interés por el dibujo y 
             la ilustración desde temprana edad. <strong> Bachiller en artes
@@ -38,8 +38,9 @@ const Contenedor = ({data}) => {
                   un panorama factural plástico que es vital en el tratamiento de la obra del artista. 
             </p>
                } 
+               <div style={{textAlign:'center'}}>
 
-            <button onClick={handleShw}  className="btn btn-outline-dark">{show?'Leer menos' :'Leer sobre su propuesta artistica'}</button>
+            <button onClick={handleShw}  className="btn btn-outline-dark" >{show?'Leer menos' :'Leer sobre su propuesta artistica'}</button></div>
 
             
         </div>

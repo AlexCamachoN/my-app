@@ -8,7 +8,7 @@ const Publicidad = () => {
     <div className="publicidad" style={{ background: " ", minHeight:'8vh',}}>
       <div style={{marginLeft:"160px"}}>
         {/* <img src={fotologo} alt="" height='80'/> */}
-        <Link to='/filtroinput'>
+        <Link to='/promesa'>
           <a className="navbar-brand " >
             <img src={fotologo} height='80'/>
           </a>
