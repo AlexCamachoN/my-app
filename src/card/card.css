@@ -1,0 +1,19 @@
+.card {}
+
+.card-title {
+    font-size: 14px;
+}
+
+.card img {
+    height: "15%";
+}
+
+.card-img-top {
+    /* width: "18%"; */
+}
+
+@media (max-width:580px) {
+    .card {
+        width: "18rem";
+    }
+}

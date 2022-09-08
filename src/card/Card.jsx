@@ -9,7 +9,7 @@ const Card = ({personaje}) => {
   return (
     //width:"16 rem"
     <div className="card" 
-    style={{width:'12rem', margin:'1rem',background:"", textAlign:'center', justifyContent:'center'}}
+    style={{width:'9rem', margin:'1rem',background:"", textAlign:'center', justifyContent:'center'}}
      >
         <img src={personaje.image} className="card-img-top" alt="..." onClick={()=>navegar(`/detalle/${personaje.id}`)}/>
         <div className="card-body">
