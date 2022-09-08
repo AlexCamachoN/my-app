@@ -1,5 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
+import './card.css'
 
 
 const Card = ({personaje}) => {
@@ -7,7 +8,9 @@ const Card = ({personaje}) => {
 
   return (
     //width:"16 rem"
-    <div className="card" style={{width:"18rem", margin:'1rem',background:"", textAlign:'center', justifyContent:'center'}} >
+    <div className="card" 
+    style={{width:'12rem', margin:'1rem',background:"", textAlign:'center', justifyContent:'center'}}
+     >
         <img src={personaje.image} className="card-img-top" alt="..." onClick={()=>navegar(`/detalle/${personaje.id}`)}/>
         <div className="card-body">
             <h5 className="card-title">{personaje.name} </h5>
