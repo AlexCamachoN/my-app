@@ -1,0 +1,26 @@
+.redes a {
+    margin: 30px;
+    text-align: center;
+    align-items: center;
+}
+
+.footer img {
+    text-align: center;
+}
+
+@media (max-width:580px) {
+    .footer .redes {
+        display: block;
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+        align-items: center;
+        padding: 0 15px;
+    }
+    img {
+        text-align: center;
+    }
+    .redes a {
+        margin: 25px;
+    }
+}

@@ -44,6 +44,7 @@ const PromiseContainer = () => {
             <p style={{padding:'10px', color:'white'}}>Bienvenido a nuestra galeria virtual de arte A.Camacho.N</p>
             <img src={fotogaleria} height='230' alt="" />
             <div>
+            <button onClick={()=> navigate('/filtroinput')}  className="btn btn-outline-warning">Home</button>
             <button onClick={()=> navigate('/filtro/Abstracto')}  className="btn btn-outline-warning">Abstracto</button>
             <button onClick={()=> navigate('/retrato')} className="btn btn-outline-warning">Retratos</button>
             <button onClick={()=> navigate('/filtro/Bodegon')}  className="btn btn-outline-warning">Bodegones</button></div>
