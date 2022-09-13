@@ -16,6 +16,7 @@ import { CartProvider } from './context/CartContext';
 import { Fragment } from 'react';
 import Checkout from './views/Checkout';
 import Retrato from './component/retrato/Retrato';
+import Cartoon from './component/cartoon/Cartoon';
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
               <Route path='/error' element={<Error/>} />
               <Route path='*' element={<Navigate to='/error'/>}/>
               <Route path='/retrato' element={<Retrato/>}/>
+              <Route path='/caricatura' element={<Cartoon/>}/>
             </Routes>
             <Footer/> 
         </BrowserRouter>

@@ -2,8 +2,9 @@ import React, { useEffect } from 'react'
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
-
+import {  Route, Routes } from 'react-router-dom';
 import { data } from '../../mocks/mockApi'
+import Cartoon from '../cartoon/Cartoon'
 import Contenedor from '../contenedor/Contenedor'
 import perfil from './Fotoperfil.jpg'
 import fotogaleria from './paredgaleria.jpg'
@@ -52,18 +53,25 @@ const PromiseContainer = () => {
         <p></p>
         <div>
             {/* <p>  <b>Alex Camacho Nuñez</b> </p> */}
-            {/* <p >Artista Plástico</p> */}
-            
+            {/* <p >Artista Plástico</p> */}            
             <img src={perfil} alt="" height='170' style={{borderRadius:'50%', border:'', boxShadow:'0px 0px 50px 0px rgba(0, 0, 0, 0.8)' }} />
             {/* <button>ver mas</button> */}
             <Contenedor/>
         </div>
-<NavLink className="nav-link" to='/filtro/Paisaje'> 
+        <NavLink className="nav-link" to='/filtro/Paisaje'> 
+            <div style={{margin:'6px', minHeight:'20.5vh', display:'', justifyContent:'center',
+             textAlign:'center', backgroundColor:'#32ad69',backgroundImage: "url(/img/verde.png)" }} >
+                <h2 style={{color:'white', fontSize:'75px'}}>Paisajes</h2>           
+            </div>
+        </NavLink>
+
+        <NavLink className="nav-link" to='/caricatura'>
         <div style={{margin:'6px', minHeight:'20.5vh', display:'', justifyContent:'center',
-          textAlign:'center', backgroundColor:'#32ad69',backgroundImage: "url(/img/verde.png)" }} >
-            <h2 style={{color:'white', fontSize:'75px'}}>Paisajes</h2>
+             textAlign:'center', background:'#fff000', }} >
+                <h2 style={{color:'white', fontSize:'65px'}}>Caricaturas</h2>           
+            </div>
             
-        </div></NavLink>
+        </NavLink>   
     </div>
   )
 }
