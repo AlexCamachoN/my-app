@@ -19,13 +19,18 @@ const Contenedor = ({data}) => {
       
         <h3>Alex Camacho Nuñez</h3>
         <p><b>Artista Plástico</b></p>
+        <p>Ver portafolio artístico   
+           <a href="https://drive.google.com/file/d/1PyBfxcJhzKBW4BHikaStLVT7bVhr_ym4/view?usp=sharing" 
+          target="_blank"
+          >Click aquí</a> 
+        </p>
         {/* <h3>{data} </h3> */}
         <div style={{textAlign:'justify', margin:'10px' }}>
-            <p>Nace en <strong> Chulucanas</strong>, Piura, Perú en 1989, 
+            {/* <p>Nace en <strong> Chulucanas</strong>, Piura, Perú en 1989, 
             donde aún reside. Despierta un gran interés por el dibujo y 
             la ilustración desde temprana edad. <strong> Bachiller en artes
              plasticas</strong>, donde aprende a trabajar con diferentes 
-             técnicas como el dibujo, pastel, carboncillo, acuarela, acrílico, y oleo.</p>
+             técnicas como el dibujo, pastel, carboncillo, acuarela, acrílico, y oleo.</p> */}
 
             {show &&<p>La obra de Alex Camacho, encierra la búsqueda de una identidad plástica
                  que se enmarca en una síntesis abstracta geométrica, donde la esencia humana 
@@ -55,6 +60,7 @@ const Contenedor = ({data}) => {
 
             <button onClick={handleSho} className="btn btn-outline-dark"> {grado?'Ver menos':'Ver grado bachiller'} </button>
         </div>
+        
         
 
     </div>
