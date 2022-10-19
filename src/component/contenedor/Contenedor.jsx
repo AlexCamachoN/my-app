@@ -19,7 +19,7 @@ const Contenedor = ({data}) => {
       
         <h3>Alex Camacho Núñez</h3>
         <p><b>Artista Plástico</b></p>
-        <p>Ver portafolio artístico   
+        <p>-Ver portafolio artístico   
            <a href="https://drive.google.com/file/d/1PyBfxcJhzKBW4BHikaStLVT7bVhr_ym4/view?usp=sharing" 
           target="_blank"
           >Click aquí</a> 
